@@ -28,48 +28,26 @@ namespace EkoopDataSync
                 xid = txtID.Text;
                 return Convert.ToInt32(xid);
             }
-            set
-            {
-                txtID.Text = value.ToString();
-            }
-            
+            set => txtID.Text = value.ToString();
         }
 
         private string _Lastname
         {
-            get
-            {
-                return txtLastname.Text;
-            }
-            set
-            {
-                txtLastname.Text = value.ToString();
-            }
+            get => txtLastname.Text;
+            set => txtLastname.Text = value.ToString();
         }
 
 
         private string _Firstname
         {
-            get
-            {
-                return txtFirstname.Text;
-            }
-            set
-            {
-                txtFirstname.Text = value.ToString();
-            }
+            get => txtFirstname.Text;
+            set => txtFirstname.Text = value.ToString();
         }
 
         private string _Middlename
         {
-            get
-            {
-                return txtMiddlename.Text;
-            }
-            set
-            {
-                txtMiddlename.Text = value.ToString();
-            }
+            get => txtMiddlename.Text;
+            set => txtMiddlename.Text = value.ToString();
         }
 
 
@@ -91,11 +69,11 @@ namespace EkoopDataSync
             Model.Region r = new Model.Region();
             //r = _act.GetRegion(_urlGet + _separator, _regCode);
             //r = _act.GetRegion(_urlGet + _separator, _id);
-            r = _act.GetRegion(_url_Region); 
+            //r = _act.GetRegion(_url_Region); 
 
-            txtLastname.Text = r.psgcCode;
-            txtFirstname.Text = r.shortname;
-            txtMiddlename.Text = r.Description;
+            //txtLastname.Text = r.psgcCode;
+            //txtFirstname.Text = r.shortname;
+            //txtMiddlename.Text = r.Description;
         }
 
         //private void EkoopDataGrid_CellContentClick(object sender, DataGridViewCellEventArgs e)

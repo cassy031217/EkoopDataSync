@@ -54,7 +54,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Membership.cs" />
+    <Compile Include="MClientele.cs" />
+    <Compile Include="MMembership.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Region.cs" />
     <EmbeddedResource Include="Properties\Resources.resx">

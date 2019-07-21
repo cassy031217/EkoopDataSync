@@ -33,6 +33,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>EkoopDataSync.Program</StartupObject>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <HintPath>..\packages\Newtonsoft.Json.12.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
@@ -57,16 +60,26 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Action.cs" />
+    <Compile Include="ActionMembers.cs" />
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Member.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Member.Designer.cs">
+      <DependentUpon>Member.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Member.resx">
+      <DependentUpon>Member.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -95,6 +108,10 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\EkoopDataSync.Business\EkoopDataSync.Business.csproj">
+      <Project>{A8F09C09-97C9-40DC-8134-0B97AC08F622}</Project>
+      <Name>EkoopDataSync.Business</Name>
+    </ProjectReference>
     <ProjectReference Include="..\EkoopDataSync.Model\EkoopDataSync.Model.csproj">
       <Project>{6cb76a5b-45ef-4525-81c9-1c497333809c}</Project>
       <Name>EkoopDataSync.Model</Name>

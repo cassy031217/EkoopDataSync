@@ -18,7 +18,7 @@ namespace EkoopDataSync
     public class Action
     {
         //Get List
-        public List<ApprovedMembership> GetAllApprovedMembership(string url)
+        //public List<ApprovedMembership> GetAllApprovedMembership(string url)
         //{
         //    List<ApprovedMembership> ApprovedMemberships = null;
         //    HttpWebRequest request = (HttpWebRequest)WebRequest.Create(url);

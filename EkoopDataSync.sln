@@ -1,11 +1,17 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2041
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EkoopDataSync.UI", "EkoopDataSync\EkoopDataSync.UI.csproj", "{A912729A-A882-4216-81D3-EEE272D6CE39}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EkoopDataSync.Model", "EkoopDataSync.Model\EkoopDataSync.Model.csproj", "{6CB76A5B-45EF-4525-81C9-1C497333809C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EkoopDataSync.Data", "EkoopDataSync.Data\EkoopDataSync.Data.csproj", "{343FAD1A-A1CF-424E-B7AF-1AB6C1320D50}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EkoopDataSync.Business", "EkoopDataSync.Business\EkoopDataSync.Business.csproj", "{A8F09C09-97C9-40DC-8134-0B97AC08F622}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EkoopDataSync.Service", "EkoopDataSync.service\EkoopDataSync.Service.csproj", "{DE65FF28-7181-42B5-8DD2-075E884B5BA4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,8 +27,23 @@ Global
 		{6CB76A5B-45EF-4525-81C9-1C497333809C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6CB76A5B-45EF-4525-81C9-1C497333809C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6CB76A5B-45EF-4525-81C9-1C497333809C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{343FAD1A-A1CF-424E-B7AF-1AB6C1320D50}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{343FAD1A-A1CF-424E-B7AF-1AB6C1320D50}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{343FAD1A-A1CF-424E-B7AF-1AB6C1320D50}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{343FAD1A-A1CF-424E-B7AF-1AB6C1320D50}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A8F09C09-97C9-40DC-8134-0B97AC08F622}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A8F09C09-97C9-40DC-8134-0B97AC08F622}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A8F09C09-97C9-40DC-8134-0B97AC08F622}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A8F09C09-97C9-40DC-8134-0B97AC08F622}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DE65FF28-7181-42B5-8DD2-075E884B5BA4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE65FF28-7181-42B5-8DD2-075E884B5BA4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DE65FF28-7181-42B5-8DD2-075E884B5BA4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DE65FF28-7181-42B5-8DD2-075E884B5BA4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B369312F-BBC3-4F3D-BC63-068FE579A9AD}
 	EndGlobalSection
 EndGlobal
